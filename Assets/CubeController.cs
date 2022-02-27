@@ -10,7 +10,7 @@ public class CubeController : MonoBehaviour
     //Á–ÅˆÊ’u
     private float deadLine = -10;
 
-    //
+    //Œø‰Ê‰¹—p•Ï”
     private AudioSource sound; 
 
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class CubeController : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    {@ //ground‚Ü‚½‚ÍCubePrefab‚ÆÚG‚µ‚½‚ÉŒø‰Ê‰¹‚ğ–Â‚ç‚·
         if (collision.gameObject.name == "CubePrefab(Clone)" || collision.gameObject.name == "ground")
         {
             sound.Play();
